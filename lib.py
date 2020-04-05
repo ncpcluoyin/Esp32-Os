@@ -7,6 +7,10 @@ def shell():
         cmd = input(pwd + ">")
         if cmd == "exit":
             return 0
+        elif cmd == "ls":
+            print(os.listdir())
+        elif cmd[:2] == "ls":
+            print(os.listdir(cmd[3:]))
         elif cmd[:3] == "run":
             try:
                 file = open(cmd[4:])
