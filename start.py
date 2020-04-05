@@ -3,5 +3,5 @@ try:
     import lib
     lib.shell()
 except:
-    print("lib.py not found!")
+    print("system quit")
     exit()
