@@ -4,7 +4,7 @@ print("Boot from \"start.py\"")
 try:
     file = open("start.py")
     exec(file.read())
+    file.close()
 except:
     print("system not found")
-file.close()
 print("system halt")
