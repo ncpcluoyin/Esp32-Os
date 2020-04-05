@@ -11,6 +11,9 @@ def shell():
             print(os.listdir())
         elif cmd[:2] == "ls":
             print(os.listdir(cmd[3:]))
+        elif cmd == "run":
+            print("run [filename]")
+            print("to run a python file")
         elif cmd[:3] == "run":
             try:
                 file = open(cmd[4:])
