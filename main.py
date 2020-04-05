@@ -4,6 +4,5 @@ try:
     exec(file.read())
     file.close()
 except:
-    print("start.py not found!")
-    exit()
+    print("error!")
 print("system halt")
