@@ -5,9 +5,9 @@ def shell():
     pwd = os.getcwd()
     while 1:
         cmd = input(pwd + ">")
-        if cmd[:3] == "exit":
+        if cmd == "exit":
             return 0
-        elif cmd[0:2] == "run":
+        elif cmd == "run":
             try:
                 file = open(cmd[4:])
                 exec(file.read())
