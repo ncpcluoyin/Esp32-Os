@@ -5,3 +5,4 @@ def shell():
     while true:
         pwd = os.getcwd()
         print(pwd + ">>")
+        input()
