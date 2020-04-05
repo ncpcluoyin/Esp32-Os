@@ -6,5 +6,5 @@ try:
     exec(file.read())
     file.close()
 except:
-    print("system not found")
+    exit()
 print("system halt")
