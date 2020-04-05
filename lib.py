@@ -6,4 +6,4 @@ def shell():
     while 1:
         cmd = input(pwd + ">")
         if cmd == "exit":
-            exit()
+            return 0
