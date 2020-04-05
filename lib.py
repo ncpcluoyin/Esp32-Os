@@ -5,7 +5,7 @@ def shell():
     pwd = os.getcwd()
     while 1:
         cmd = input(pwd + ">")
-        if cmd == "exit":
+        if cmd[0:3] == "exit":
             return 0
         elif cmd[0:2] == "run":
             try:
