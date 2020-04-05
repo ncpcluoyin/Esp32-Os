@@ -14,5 +14,8 @@ def shell():
                 print("return true")
             except:
                 print("return false")
+        elif cmd[:5] == "touch":
+            file = open(cmd[5:])
+            file.close()
         else:
             print("What is \"" + cmd + "\"?")
