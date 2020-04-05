@@ -4,4 +4,4 @@ try:
     lib.shell()
 except:
     print("system quit")
-    exit()
+    return 0
