@@ -5,5 +5,5 @@ try:
     file.close()
 except:
     print("start.py not found!")
-    return 0
+    exit()
 print("system halt")
