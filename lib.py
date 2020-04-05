@@ -7,7 +7,7 @@ def shell():
         cmd = input(pwd + ">")
         if cmd == "exit":
             return 0
-        elif cmd == "run":
+        elif cmd[:3] == "run":
             try:
                 file = open(cmd[4:])
                 exec(file.read())
