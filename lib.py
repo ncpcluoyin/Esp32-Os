@@ -50,8 +50,6 @@ def shell():
             print("press \"quit\" to exit")
             print("filename:" + cmd[5:])
             lines = 1
-            text = ""
-            line = ""
             while true:
                 line = input(str(lines) + "#")
                 if line == "quit":
