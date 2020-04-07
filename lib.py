@@ -48,7 +48,7 @@ def shell():
             os.mkdir(cmd[6:])
         elif cmd[:5] == "edit ":
             print("press \"quit\" to exit")
-            print("filename:" + cmd[5:])
+            #print("filename:" + cmd[5:])
             lines = 1
             text = ""
             line = ""
