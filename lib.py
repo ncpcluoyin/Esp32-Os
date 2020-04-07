@@ -63,7 +63,7 @@ def shell():
                 text = text + "\n" + line
                 lines = lines + 1
             try:
-                file = open(cmd[5:])
+                file = open(cmd[5:],"w")
                 file.write(text)
                 print("return true")
             except:
