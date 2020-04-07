@@ -44,5 +44,7 @@ def shell():
                 print("return true")
             except:
                 print("return false")
+        elif cmd == "":
+            continue
         else:
             print("What is \"" + cmd + "\"?")
