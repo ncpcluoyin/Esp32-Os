@@ -20,3 +20,5 @@
 3.  本系统制作团队为syrathon，我问的官网是www.syrathon.com,论坛bbs.syrathon.com
 
 #### 此版本特性
+1.  稳定，使用分层化设计，程序出现错误时，不会崩溃而是产生一个反馈，shell接收到这个反馈就会在串口上打印"return false"，如果没有收到错误反馈则会打印"return true"（或者不打印）
+2.  支持文件夹删除和创建
