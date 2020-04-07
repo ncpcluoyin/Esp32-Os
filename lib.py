@@ -32,17 +32,17 @@ def shell():
                 print("return true")
             except:
                 print("return false")
-        elif cmd[:3] == "rm ":
-            try:
-                os.remove(cmd[3:])
-                print("return true")
-            except:
-                print("return false")
         elif cmd[:6] == "rm -r ":
             shutil.rmtree(cmd[6:])
             print("return true")
             #except:
             #    print("return false")
+        elif cmd[:3] == "rm " and cmd[:6] != "rm -r ":
+            try:
+                os.remove(cmd[3:])
+                print("return true")
+            except:
+                print("return false")
         elif cmd == "":
             continue
         else:
