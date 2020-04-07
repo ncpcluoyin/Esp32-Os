@@ -8,22 +8,22 @@ def shell():
             return 0
         elif cmd == "ls":
             print(os.listdir())
-        elif cmd[:2] == "ls":
+        elif cmd[:3] == "ls ":
             print(os.listdir(cmd[3:]))
         elif cmd == "run":
             print("run [filename]")
             print("to run a python file")
-        elif cmd[:3] == "run":
+        elif cmd[:4] == "run ":
             try:
                 file = open(cmd[4:])
                 exec(file.read())
                 print("return true")
             except:
                 print("return false")
-        elif cmd[:5] == "touch":
-            file = open(cmd[5:])
+        elif cmd[:6] == "touch ":
+            file = open(cmd[6:])
             file.close()
-        elif cmd[:3] == "cat":
+        elif cmd[:4] == "cat ":
             try:
                 file = open(cmd[4:])
                 print(file.read())
@@ -31,13 +31,13 @@ def shell():
                 print("return true")
             except:
                 print("return false")
-        elif cmd[:2] == "rm":
+        elif cmd[:3] == "rm ":
             try:
                 os.remove(cmd[3:])
                 print("return true")
             except:
                 print("return false")
-        elif cmd[:2] == "rm" and cmd[4:6] == "-rf":
+        elif cmd[:7] == "rm -rf ":
             try:
                 shutil.rmtree(cmd[7:])
                 print("return true")
