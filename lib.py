@@ -44,6 +44,8 @@ def shell():
                 print("return true")
             except:
                 print("return false")
+        elif cmd[:6] == "mkdir ":
+            os.mkdir(cmd[6:])
         elif cmd == "":
             continue
         else:
