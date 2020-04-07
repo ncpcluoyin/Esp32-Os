@@ -48,5 +48,7 @@ def shell():
             os.mkdir(cmd[6:])
         elif cmd == "":
             continue
+        elif cmd[:6] == "mkdir ":
+            os.mkdir(cmd[6:])
         else:
             print("What is \"" + cmd + "\"?")
