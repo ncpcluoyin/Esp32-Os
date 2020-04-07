@@ -46,26 +46,6 @@ def shell():
                 print("return false")
         elif cmd[:6] == "mkdir ":
             os.mkdir(cmd[6:])
-        elif cmd[:5] == "edit ":
-            print("press \"quit\" to exit")
-            print("filename:" + cmd[5:])
-            lines = 1
-            while true:
-                line = input(str(lines) + "#")
-                if line == "quit":
-                    break
-                if lines == 1:
-                    text = line
-                    lines = lines + 1
-                    continue
-                text = text + "\n" + line
-                lines = lines + 1
-            try:
-                file = open(cmd[5:],"w")
-                file.write(text)
-                print("return true")
-            except:
-                print("return false")
         elif cmd == "":
             continue
         else:
