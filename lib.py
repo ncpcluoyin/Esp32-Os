@@ -39,11 +39,10 @@ def shell():
             except:
                 print("return false")
         elif cmd[:6] == "rm -r ":
-            try:
-                shutil.rmtree(cmd[6:])
-                print("return true")
-            except:
-                print("return false")
+            shutil.rmtree(cmd[6:])
+            print("return true")
+            #except:
+            #    print("return false")
         elif cmd == "":
             continue
         else:
