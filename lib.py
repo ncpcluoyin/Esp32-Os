@@ -23,7 +23,7 @@ def shell():
         elif cmd[:5] == "touch":
             file = open(cmd[5:])
             file.close()
-        elif cmd[:3] == "cat"：
+        elif cmd[:3] == "cat":
             try:
                 file = open(cmd[4:])
                 print(file.read())
