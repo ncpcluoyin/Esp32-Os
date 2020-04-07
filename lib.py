@@ -37,5 +37,11 @@ def shell():
                 print("return true")
             except:
                 print("return false")
+        elif cmd[:2] == "rm" and cmd[4:6] == "-rf":
+            try:
+                shutil.rmtree(cmd[7:])
+                print("return true")
+            except:
+                print("return false")
         else:
             print("What is \"" + cmd + "\"?")
