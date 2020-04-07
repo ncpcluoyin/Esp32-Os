@@ -23,5 +23,19 @@ def shell():
         elif cmd[:5] == "touch":
             file = open(cmd[5:])
             file.close()
+        elif cmd[:3] == "cat"：
+            try:
+                file = open(cmd[4:])
+                print(file.read())
+                file.close()
+                print("return true")
+            except:
+                print("return false")
+        elif cmd[:2] == "rm":
+            try:
+                os.remove(cmd[3:])
+                print("return true")
+            except:
+                print("return false")
         else:
             print("What is \"" + cmd + "\"?")
