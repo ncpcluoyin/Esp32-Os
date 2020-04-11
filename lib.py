@@ -50,5 +50,11 @@ def shell():
             continue
         elif cmd[:6] == "mkdir ":
             os.mkdir(cmd[6:])
+        elif cmd[:3] == "cd ":
+            try:
+                os.chdir(cmd[3:])
+                print("return true")
+            except:
+                print("return false")
         else:
             print("What is \"" + cmd + "\"?")
