@@ -9,7 +9,7 @@ If you want to get the latest development progress, you can use the system provi
 
 #### Installation tutorial
 
-1. Clone the system to local, the default clone branch is stable version
+1. Clone the system to local, and then use "make get" to get the sources,the default clone branch is stable version
 2. Copy main.py, start.py, lib.py and other files with the suffix .py to the file system of the micropython development board, remember not to delete the boot.py that comes with the file system
 3. After power on, you can interact in the serial port. The commands are similar to linux, but you need to use "run [filename]" to execute the python program.
 
